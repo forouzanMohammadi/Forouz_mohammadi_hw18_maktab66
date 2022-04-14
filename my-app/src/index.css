@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Shabnam;
+  src: url(./shabnam-font-v5.0.1/Farsi-Digits-Without-Latin/Shabnam-Medium-FD-WOL.woff2) format("woff2");
+
+}
+
+body {
+  margin: 0;
+  font-family:Shabnam, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(219, 219, 219);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container-form{
+  background-color: #152735;
+  margin-top: 50px;
+  width:38vw;
+  height: auto;
+  border-radius: 5px;
+}
+.btn-form{
+  height: 7vh;
+  border:none;
+  color: rgba(255, 255, 255, 0.76);
+}
+.par{
+  color: #fff;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+input{
+  background-color: transparent;
+  border: 1px solid rgb(162, 216, 203);
+  width: 96%;
+  height: 6vh;
+  color: #fff;
+  margin-right: 10px;
+}
+::placeholder{
+  color: rgba(175, 175, 177, 0.671);
+  padding-right: 5px;
+}
+input::placeholder:before{
+  content: "*";
+  color: rgb(71, 179, 129);
+}
+.forgot{
+  color: rgb(13, 131, 101);
+  text-decoration: none;
+}
+.forgot:hover{
+  color: rgb(162, 216, 203);
+  cursor: pointer;
+}
+.subLog{
+  width: 96%;
+  height: 8vh;
+  background-color: rgb(15, 172, 133);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  margin-right: 10px;
+}
+.nameInput{
+  width: 46%;
+  margin-right: 15px;
+}
+select{
+  background-color: transparent;
+  border: 1px solid rgb(162, 216, 203);
+  width: 96.2%;
+  height: 6vh;
+  margin-right: 10px;
+  margin-left: 40px;
+  color: rgba(175, 175, 177, 0.671);
+}
+select:focus{
+  color:#000;
+  
+}
+.selected{
+  width: 92%;
+}
+.bi-eye{
+  position: relative;
+  right: 90%;
+  top: 40%;
+  color: #fff;
+  font-weight: bold;
+}
+
+.bi-eye-slash{
+  position: relative;
+  right: 90%;
+  top: 40%;
+  color: #fff;
+  font-weight: bold;
+}
