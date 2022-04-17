@@ -4,7 +4,6 @@ import { Container, Row, Col, Form } from 'react-bootstrap'
 import axios from 'axios'
 
 const Regester = () => {
-  const [inputValue, setInputValue] = useState('')
   const [provinces, setProvinces] = useState({})
   const [cities, setCities] = useState([])
   const [education, setEducation] = useState(false)
@@ -105,8 +104,8 @@ const Regester = () => {
           />
           <select
             required
-            onChange={(event) => {
-              setInputValue(event.target.value)
+            onChange={(e) => {
+              formik.handleChange(e)
               setEducation(true)
             }}
             className="mt-3"
@@ -157,12 +156,15 @@ const Regester = () => {
             </div>
             <div className="col-6">
               <select required
+              value={formik.values.city}
+              name="city"
+              id='city'
               onChange={(e) => {
                 formik.handleChange(e);
                 inuptChangeHandler(e);
               }}
                className="mt-3 selected">
-                <option value={formik.values.city} className="plcholder">شهرستان محل تولد</option>
+                <option value={'شهرستان محل تولد'} className="plcholder">شهرستان محل تولد</option>
                 {cities.map((item, index) => (
                   <option value={item} key={index}>
                     {item}
@@ -180,4 +182,4 @@ const Regester = () => {
   )
 }
 
-export default Regester
+export default Regester;
